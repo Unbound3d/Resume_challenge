@@ -1,5 +1,5 @@
 Portfolio Website root Dir
 
-Fluff content fot CI/CD Testing. 
+Fluff content for CI/CD Testing. 
 
 UPDATED
