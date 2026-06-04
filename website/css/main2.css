@@ -150,3 +150,188 @@
 .contact {
   background: url(url) no-repeat center;
 }
+
+/* ── Hero section ── */
+
+/* Stronger gradient overlay for better text contrast */
+.profile-page .page-header:before {
+  background: linear-gradient(135deg, rgba(0,0,0,0.65) 0%, rgba(0,40,10,0.55) 100%);
+}
+
+/* Split layout: photo left, text right */
+.hero-split {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  text-align: left;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.hero-photo-col {
+  flex-shrink: 0;
+}
+
+.hero-text-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-name {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 10px;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.hero-tagline {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 28px;
+}
+
+.hero-tagline #typed {
+  color: #6bf89d;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+/* Ghost / outline button for secondary CTA */
+.btn-outline-light {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background 0.25s, border-color 0.25s;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Inline social icons */
+.hero-social {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-social a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.4rem;
+  transition: color 0.2s, transform 0.2s;
+  text-decoration: none;
+}
+
+.hero-social a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Bouncing scroll-down arrow */
+.hero-scroll-down {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 1.6rem;
+  text-decoration: none;
+  animation: hero-bounce 2.2s ease-in-out infinite;
+  z-index: 5;
+  transition: color 0.2s;
+}
+
+.hero-scroll-down:hover {
+  color: #fff;
+}
+
+@keyframes hero-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(10px); }
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 767px) {
+  .hero-split {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .hero-social {
+    justify-content: center;
+  }
+}
+
+/* ── Skills pill tags ── */
+.skills-group-container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 4px 0;
+}
+
+.skill-group-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-pill {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.pill-offensive {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.pill-appsec {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.pill-defensive {
+  background: #fef3c7;
+  color: #92400e;
+}
