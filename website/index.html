@@ -14,9 +14,6 @@
     <link href="css/main2.css" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -41,12 +38,17 @@
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#certifications">Certs</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="https://unbound3d.hashnode.dev/" target="_blank">Blog</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="https://unbound3d.gitbook.io/walkthroughs" target="_blank">Walkthroughs</a></li>     
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="https://unbound3d.hashnode.dev/" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="https://unbound3d.gitbook.io/walkthroughs" target="_blank" rel="noopener noreferrer">Walkthroughs</a></li>
+              </ul>
             </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <div class="page-content">
       <div>
@@ -75,26 +77,34 @@
 
 <div class="profile-page">
   <div class="wrapper">
-    <div class="page-header page-header-small" filter-color="green">
+    <div class="page-header" filter-color="green">
       <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg')"></div>
       <div class="container">
-        <div class="content-center" style="display: flex; justify-content: center; align-items: center;">
-          <div class="cc-profile-image"><a href="#"><img src="images/dp.jpg" alt="Image"/></a></div>
-          <div style="margin-left: 20px;">
-            <div class="h2 title">Erick Mutisya</div>
-            <!-- <p class="category text-white">Web Developer, Graphic Designer,  Photographer</p> -->
-            <p class="category text-white">I'm a <span id="typed" style="color: lightgreen;"></span></p>
-            <!-- <h5 class="text-white font-ram font-size-27">I'm a <span id="typed"></span></h5> -->
-            <a class="btn btn-primary smooth-scroll mr-4" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Get in Touch</a>
-            <!-- <a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a> -->
+        <div class="content-center hero-split">
+          <div class="hero-photo-col" data-aos="fade-right" data-aos-duration="800">
+            <div class="cc-profile-image">
+              <a href="#about" class="smooth-scroll"><img src="images/dp.jpg" alt="Erick Mutisya" width="180" height="180"/></a>
+            </div>
+          </div>
+          <div class="hero-text-col" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+            <h1 class="hero-name">Erick Mutisya</h1>
+            <p class="hero-tagline">I'm a <span id="typed"></span></p>
+            <div class="hero-cta">
+              <a class="btn btn-primary smooth-scroll" href="#contact">Get in Touch</a>
+              <a class="btn btn-outline-light smooth-scroll" href="#portfolio">View My Work</a>
+            </div>
+            <div class="hero-social">
+              <a href="https://www.linkedin.com/in/erick-mutisya/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+              <a href="https://twitter.com/unbound3d" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://github.com/Unbound3d" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa fa-github"></i></a>
+              <a href="https://medium.com/@unbound3d" target="_blank" rel="noopener noreferrer" title="Blog"><i class="fa fa-pencil"></i></a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="section">
-        <div class="container">
-          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/erick-mutisya/" rel="tooltip" title="Follow me on Linkedin"><i class="fa fa-linkedin"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://twitter.com/unbound3d" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/Unbound3d" rel="tooltip" title="Follow me on GitHub"><i class="fa fa-github"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://medium.com/@unbound3d" rel="tooltip" title="Check out my blog posts"><i class="fa fa-pencil"></i></a></div>
-        </div>
-      </div>
+      <a href="#about" class="hero-scroll-down smooth-scroll" aria-label="Scroll to about section">
+        <i class="fa fa-chevron-down"></i>
+      </a>
     </div>
   </div>
 </div>
@@ -152,7 +162,7 @@
             <div class="h4 mt-0 title">About Me</div>
             <p>With a sharp focus on offensive security, penetration testing, application security and cloud security, I bring over 3 years of expertise as a Cyber Security Specialist and Python Software Developer. My passion lies in uncovering vulnerabilities, fortifying cloud infrastructures, and executing strategic penetration tests to ensure robust defense mechanisms. I thrive on the thrill of securing networks against potential threats and leveraging cloud technologies to enhance resilience. 
             As a self-driven learner, I continuously explore new methodologies and tools to elevate my craft, aiming to drive impactful change within organizations. My skill set spans across Linux System Administration, Windows Server management, Networking optimization, Mobile Security strategies, Reverse Engineering techniques, Penetration Testing methodologies, Vulnerability Assessment practices, and Log management proficiency. </p>
-            <a class="btn btn-primary" href="" download target="_blank" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/erick-mutisya/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"><i class="fa fa-linkedin mr-1"></i> Connect on LinkedIn</a>
           </div>
         </div>
       </div>
@@ -216,13 +226,14 @@
   </div>
 </div>
 <!-- Certifications -->
-<div class="section" id="skill">
+<div class="section" id="certifications">
   <div class="container">
     <div class="h4 text-center mb-4 title">CERTIFICATIONS & AWARDS</div>
     <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <div class="card-body">
           <div class="w-100">
             <ul class="fa-ul mb-0 font-ram font-size-16 text-black-50 pb-3">
+              <li><i class="fa-li fa fa-trophy text-warning"></i>Certified DevSecOps Professional (CDP) – Practical DevSecOps</li>
               <li><i class="fa-li fa fa-trophy text-warning"></i>API Penetration Testing - APIsec University</li>
               <li><i class="fa-li fa fa-trophy text-warning"></i>Salt Technical Associate</li>
               <li><i class="fa-li fa fa-trophy text-warning"></i>Ivanti Endpoint Manager - Administration</li>
@@ -322,7 +333,7 @@
 <!-- Portfolio end  -->
 
 <!-- work experience  -->
-<div class="section" id="experience"></div>
+<div class="section" id="experience">
   <div class="container">
     <div class="h4 text-center mb-4 title">Work Experience</div>
     <div class="row">
@@ -502,12 +513,6 @@
     <script src="js/aos.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
     <script src="scripts/typed.js"></script>
-<script src="js/core/popper.min.js?ver=1.1.0"></script>
-<script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
-<script src="js/now-ui-kit.js?ver=1.1.0"></script>
-<script src="js/aos.js?ver=1.1.0"></script>
-<script src="scripts/main.js?ver=1.1.0"></script>
-<script src="scripts/typed.js"></script>
 
 <!-- Dynamic Year Script -->
 <script>
