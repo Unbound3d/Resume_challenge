@@ -45,7 +45,7 @@
     padding: 50px;
     list-style: none;
     text-align: left;
-    max-width: 100%;
+    max-width: 40%;
 }
 
 @media (max-width: 767px) {
