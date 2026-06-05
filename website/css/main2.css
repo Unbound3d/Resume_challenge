@@ -1038,3 +1038,210 @@
 [data-theme="dark"] #contact {
   background: #0f172a;
 }
+
+/* ══════════════════════════════════════════
+   A3/B1/C1 — Modern Portfolio Cards
+   ══════════════════════════════════════════ */
+
+.portfolio-intro {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 36px;
+}
+
+.portfolio-intro a {
+  color: #16a34a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.portfolio-intro a:hover { text-decoration: underline; }
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+/* Card shell */
+.pf-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.pf-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.13);
+}
+
+/* Image area with badge */
+.pf-card-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.pf-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.pf-card:hover .pf-card-img {
+  transform: scale(1.04);
+}
+
+/* C1 — Type badge */
+.pf-type-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.badge-personal {
+  background: rgba(220, 252, 231, 0.92);
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.badge-client {
+  background: rgba(219, 234, 254, 0.92);
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}
+
+/* Card body */
+.pf-card-body {
+  padding: 20px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.pf-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 8px;
+}
+
+.pf-card-desc {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin-bottom: 14px;
+  flex: 1;
+}
+
+/* Tech tags */
+.pf-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.pf-tag {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Action buttons */
+.pf-card-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.pf-btn-outline {
+  border: 1.5px solid #334155;
+  color: #334155;
+  background: transparent;
+}
+
+.pf-btn-outline:hover {
+  background: #334155;
+  color: #fff;
+  text-decoration: none;
+}
+
+.pf-btn-primary {
+  background: #16a34a;
+  color: #fff;
+  border: 1.5px solid #16a34a;
+}
+
+.pf-btn-primary:hover {
+  background: #15803d;
+  border-color: #15803d;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Bottom CTA */
+.portfolio-cta {
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Dark mode */
+[data-theme="dark"] .pf-card {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+[data-theme="dark"] .pf-card-title { color: #f1f5f9; }
+[data-theme="dark"] .pf-card-desc  { color: #94a3b8; }
+[data-theme="dark"] .pf-tag {
+  background: #334155;
+  color: #cbd5e1;
+  border-color: #475569;
+}
+
+[data-theme="dark"] .pf-btn-outline {
+  border-color: #94a3b8;
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .pf-btn-outline:hover {
+  background: #94a3b8;
+  color: #0f172a;
+}
+
+[data-theme="dark"] .portfolio-intro { color: #94a3b8; }

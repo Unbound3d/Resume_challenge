@@ -295,119 +295,105 @@
 <!-- Portfolio  -->
 <div class="section" id="portfolio">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="h4 text-center mb-4 title">Portfolio</div>
-        <div class="nav-align-center">
-          <!-- <ul class="nav nav-pills nav-pills-primary" role="tablist">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development" role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography" role="tablist"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
-          </ul> -->
+    <div class="h4 text-center mb-2 title">Portfolio</div>
+    <p class="portfolio-intro">A selection of personal projects and client builds. More on <a href="https://github.com/Unbound3d" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p>
+
+    <div class="portfolio-grid">
+
+      <!-- Weather App (merged) -->
+      <div class="pf-card" data-aos="fade-up">
+        <div class="pf-card-img-wrap">
+          <img src="images/weather_app.png" alt="Weather App" loading="lazy" class="pf-card-img">
+          <span class="pf-type-badge badge-personal">Personal</span>
+        </div>
+        <div class="pf-card-body">
+          <h3 class="pf-card-title">Weather App</h3>
+          <p class="pf-card-desc">Real-time weather forecasts and a clean dashboard UI, pulling live data from the OpenWeatherMap API.</p>
+          <div class="pf-card-tags">
+            <span class="pf-tag">Python</span>
+            <span class="pf-tag">REST API</span>
+            <span class="pf-tag">UI Design</span>
+          </div>
+          <div class="pf-card-actions">
+            <a class="pf-btn pf-btn-outline" href="https://github.com/Unbound3d/weatherApp" target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-github"></i> GitHub
+            </a>
+          </div>
         </div>
       </div>
+
+      <!-- URL Shortener -->
+      <div class="pf-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="pf-card-img-wrap">
+          <img src="images/url_shortener.png" alt="URL Shortener" loading="lazy" class="pf-card-img">
+          <span class="pf-type-badge badge-personal">Personal</span>
+        </div>
+        <div class="pf-card-body">
+          <h3 class="pf-card-title">URL Shortener</h3>
+          <p class="pf-card-desc">Custom short-link generator with click tracking and a lightweight Flask backend.</p>
+          <div class="pf-card-tags">
+            <span class="pf-tag">Python</span>
+            <span class="pf-tag">Flask</span>
+            <span class="pf-tag">SQLite</span>
+          </div>
+          <div class="pf-card-actions">
+            <a class="pf-btn pf-btn-outline" href="https://github.com/Unbound3d/urlshortener" target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Essays Capital -->
+      <div class="pf-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="pf-card-img-wrap">
+          <img src="images/Research-essays.png" alt="Research Essays Capital" loading="lazy" class="pf-card-img">
+          <span class="pf-type-badge badge-client">Client</span>
+        </div>
+        <div class="pf-card-body">
+          <h3 class="pf-card-title">Research Essays Capital</h3>
+          <p class="pf-card-desc">Full website design and build for an academic writing services company.</p>
+          <div class="pf-card-tags">
+            <span class="pf-tag">HTML/CSS</span>
+            <span class="pf-tag">JavaScript</span>
+            <span class="pf-tag">Responsive</span>
+          </div>
+          <div class="pf-card-actions">
+            <a class="pf-btn pf-btn-primary" href="https://researchessayscapital.com/" target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-external-link"></i> Live Site
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RISQ Pro -->
+      <div class="pf-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="pf-card-img-wrap">
+          <img src="images/risqpro.png" alt="RISQ Pro" loading="lazy" class="pf-card-img">
+          <span class="pf-type-badge badge-client">Client</span>
+        </div>
+        <div class="pf-card-body">
+          <h3 class="pf-card-title">RISQ Pro</h3>
+          <p class="pf-card-desc">Website development and deployment for a risk management and compliance consultancy.</p>
+          <div class="pf-card-tags">
+            <span class="pf-tag">HTML/CSS</span>
+            <span class="pf-tag">JavaScript</span>
+            <span class="pf-tag">Deployment</span>
+          </div>
+          <div class="pf-card-actions">
+            <a class="pf-btn pf-btn-primary" href="https://risq.pro/" target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-external-link"></i> Live Site
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="tab-content gallery mt-5">
-      <div class="tab-pane active" id="web-development">
-        <div class="ml-auto mr-auto">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                <figure class="cc-effect">
-                  <img src="images/weather_app.png" alt="Weather App" loading="lazy"/>
-                  <figcaption>
-                    <div class="h4">Weather App</div>
-                    <p>Real-time weather forecasts fetched from OpenWeatherMap API.</p>
-                    <div class="cc-tags">
-                      <span class="cc-tag">Python</span>
-                      <span class="cc-tag">REST API</span>
-                    </div>
-                    <a class="cc-overlay-link" href="https://github.com/Unbound3d/weatherApp" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                <figure class="cc-effect">
-                  <img src="images/url_shortener.png" alt="URL Shortener" loading="lazy"/>
-                  <figcaption>
-                    <div class="h4">URL Shortener</div>
-                    <p>Custom short-link generator with click tracking.</p>
-                    <div class="cc-tags">
-                      <span class="cc-tag">Python</span>
-                      <span class="cc-tag">Flask</span>
-                    </div>
-                    <a class="cc-overlay-link" href="https://github.com/Unbound3d/urlshortener" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                <figure class="cc-effect">
-                  <img src="images/weather_home.png" alt="Weather App Home Screen" loading="lazy"/>
-                  <figcaption>
-                    <div class="h4">Weather App UI</div>
-                    <p>Home screen and dashboard view for the weather application.</p>
-                    <div class="cc-tags">
-                      <span class="cc-tag">Python</span>
-                      <span class="cc-tag">UI Design</span>
-                    </div>
-                    <a class="cc-overlay-link" href="https://github.com/Unbound3d/weatherApp" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                <figure class="cc-effect">
-                  <img src="images/Research-essays.png" alt="Research Essays Capital" loading="lazy"/>
-                  <figcaption>
-                    <div class="h4">Client Website</div>
-                    <p>Full website build for Research Essays Capital.</p>
-                    <div class="cc-tags">
-                      <span class="cc-tag">HTML/CSS</span>
-                      <span class="cc-tag">Client Work</span>
-                    </div>
-                    <a class="cc-overlay-link" href="https://researchessayscapital.com/" target="_blank" rel="noopener noreferrer">Live ↗</a>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                <figure class="cc-effect">
-                  <img src="images/risqpro.png" alt="RISQ Pro" loading="lazy"/>
-                  <figcaption>
-                    <div class="h4">Client Website 2</div>
-                    <p>Website development and deployment for RISQ Pro.</p>
-                    <div class="cc-tags">
-                      <span class="cc-tag">HTML/CSS</span>
-                      <span class="cc-tag">Client Work</span>
-                    </div>
-                    <a class="cc-overlay-link" href="https://risq.pro/" target="_blank" rel="noopener noreferrer">Live ↗</a>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane" id="graphic-design" role="tabpanel">
-        <div class="ml-auto mr-auto">
-          <div class="row">
-            <!-- Similar structure as above -->
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane" id="Photography" role="tabpanel">
-        <div class="ml-auto mr-auto">
-          <div class="row">
-            <!-- Similar structure as above -->
-          </div>
-        </div>
-      </div>
+
+    <div class="portfolio-cta">
+      <a href="https://github.com/Unbound3d" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        <i class="fa fa-github mr-1"></i> View All Projects on GitHub
+      </a>
     </div>
   </div>
 </div>
