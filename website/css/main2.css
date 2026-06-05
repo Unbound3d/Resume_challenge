@@ -525,3 +525,16 @@
 [data-theme="dark"] .skill-group-label {
   color: #64748b;
 }
+
+/* ── Hero alignment override ── */
+/* content-center forces text-align:center; hero-split needs left alignment */
+.page-header .container > .content-center.hero-split {
+  text-align: left;
+  display: flex !important;
+}
+
+@media (max-width: 767px) {
+  .page-header .container > .content-center.hero-split {
+    text-align: center;
+  }
+}
