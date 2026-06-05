@@ -400,3 +400,10 @@
   color: #fff !important;
   text-decoration: none;
 }
+
+/* ── Active nav link ── */
+.navbar-nav .nav-link.nav-active {
+  color: #fff !important;
+  border-bottom: 2px solid #4ade80;
+  padding-bottom: 1px;
+}

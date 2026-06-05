@@ -47,14 +47,47 @@ $('a.smooth-scroll')
 const counter = document.querySelector(".counter-number");
 
 async function updateCounter() {
-    let response = await fetch(
-        "https://l55bixbqlzqd6xzxq5iy56nwoe0geyzn.lambda-url.us-east-1.on.aws/"
-    );
-    let data = await response.json();
-    counter.innerHTML = `👀 Views: ${data}`;
+    try {
+        let response = await fetch(
+            "https://l55bixbqlzqd6xzxq5iy56nwoe0geyzn.lambda-url.us-east-1.on.aws/"
+        );
+        let data = await response.json();
+        counter.textContent = `👀 Views: ${data}`;
+    } catch (e) {
+        counter.textContent = "";
+    }
 }
 
 updateCounter();
 
 
 
+
+// Active nav highlighting
+(function () {
+  const navLinks = Array.from(
+    document.querySelectorAll('.navbar-nav .nav-link[href^="#"]')
+  );
+  const sections = navLinks
+    .map(link => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+
+  if (!sections.length) return;
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach(link => {
+          link.classList.toggle(
+            'nav-active',
+            link.getAttribute('href') === '#' + entry.target.id
+          );
+        });
+      });
+    },
+    { rootMargin: '-60px 0px -60% 0px', threshold: 0 }
+  );
+
+  sections.forEach(s => observer.observe(s));
+})();
