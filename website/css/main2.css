@@ -964,9 +964,19 @@
    FIXES
    ══════════════════════════════════════════ */
 
-/* 1 — Hero: ring pinned to top, larger photo */
+/* 1 — Hero: ring properly around the photo circle
+   The <a> is inline by default — give it block dimensions so
+   position:absolute on ::before anchors to the image box, not flow. */
+.cc-profile-image a {
+  display: inline-block !important;
+  width: 220px !important;
+  height: 220px !important;
+  position: relative !important;
+}
+
 .cc-profile-image a:before {
   top: 0 !important;
+  left: 0 !important;
 }
 
 .cc-profile-image img,
