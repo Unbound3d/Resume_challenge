@@ -335,3 +335,68 @@
   background: #fef3c7;
   color: #92400e;
 }
+/* ── Portfolio card hover overlay extras ── */
+.cc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin: 6px 0;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(0, 10px, 0);
+}
+
+.gallery figure.cc-effect:hover .cc-tags {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.cc-tag {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  padding: 2px 9px;
+  border-radius: 12px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.gallery .cc-porfolio-image figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.gallery figure.cc-effect .h4 {
+  margin-top: 0;
+}
+
+.cc-overlay-link {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 4px 14px;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 20px;
+  color: #fff !important;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s, background 0.2s;
+  transform: translate3d(0, 10px, 0);
+}
+
+.gallery figure.cc-effect:hover .cc-overlay-link {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.cc-overlay-link:hover {
+  background: rgba(255,255,255,0.2);
+  color: #fff !important;
+  text-decoration: none;
+}
