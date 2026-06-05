@@ -1028,3 +1028,13 @@
 }
 
 .footer-back-top:hover { color: #4ade80 !important; }
+
+/* ── Contact section: clear separation from footer ── */
+#contact {
+  background: #fff;
+  padding-bottom: 60px;
+}
+
+[data-theme="dark"] #contact {
+  background: #0f172a;
+}
