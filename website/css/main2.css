@@ -407,3 +407,121 @@
   border-bottom: 2px solid #4ade80;
   padding-bottom: 1px;
 }
+
+/* ── Dark mode toggle button ── */
+.btn-dark-toggle {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 6px 8px;
+  line-height: 1;
+  transition: color 0.2s;
+  vertical-align: middle;
+}
+
+.btn-dark-toggle:hover,
+.btn-dark-toggle:focus {
+  color: #fff;
+  outline: none;
+}
+
+/* ── Dark theme ── */
+[data-theme="dark"] body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .page-content,
+[data-theme="dark"] .section {
+  background-color: #0f172a;
+}
+
+[data-theme="dark"] .card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .card-body p,
+[data-theme="dark"] .text-black-50 {
+  color: #94a3b8 !important;
+}
+
+[data-theme="dark"] .h4.title,
+[data-theme="dark"] .card-body h3,
+[data-theme="dark"] .card-body h6,
+[data-theme="dark"] .card-title {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .timeline {
+  background: rgba(107, 244, 139, 0.05);
+  border-left-color: #4ade80;
+}
+
+[data-theme="dark"] .timeline .event:before {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .footer {
+  background: #1e293b !important;
+}
+
+[data-theme="dark"] .footer .h4,
+[data-theme="dark"] .counter-number,
+[data-theme="dark"] .text-muted {
+  color: #94a3b8 !important;
+}
+
+[data-theme="dark"] .footer a {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .footer a:hover {
+  color: #fff;
+}
+
+[data-theme="dark"] .divider {
+  background-color: #334155 !important;
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] textarea.form-control {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .form-control::placeholder {
+  color: #64748b;
+}
+
+[data-theme="dark"] .input-group-addon {
+  background: #334155;
+  border-color: #475569;
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .about-section img {
+  opacity: 0.9;
+}
+
+[data-theme="dark"] .pill-offensive {
+  background: #14532d;
+  color: #86efac;
+}
+
+[data-theme="dark"] .pill-appsec {
+  background: #1e3a5f;
+  color: #93c5fd;
+}
+
+[data-theme="dark"] .pill-defensive {
+  background: #451a03;
+  color: #fcd34d;
+}
+
+[data-theme="dark"] .skill-group-label {
+  color: #64748b;
+}

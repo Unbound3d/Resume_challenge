@@ -91,3 +91,23 @@ updateCounter();
 
   sections.forEach(s => observer.observe(s));
 })();
+
+// Dark mode toggle
+(function () {
+  const toggle = document.getElementById('darkModeToggle');
+  const icon = document.getElementById('darkModeIcon');
+
+  function applyTheme(dark) {
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    icon.className = dark ? 'fa fa-sun-o' : 'fa fa-moon-o';
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+  }
+
+  const saved = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  applyTheme(saved ? saved === 'dark' : prefersDark);
+
+  toggle.addEventListener('click', function () {
+    applyTheme(document.documentElement.getAttribute('data-theme') !== 'dark');
+  });
+})();
