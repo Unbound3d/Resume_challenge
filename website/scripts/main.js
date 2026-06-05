@@ -43,18 +43,17 @@ $('a.smooth-scroll')
   }
 });
 
-// Counter code 
-const counter = document.querySelector(".counter-number");
-
+// Counter code — write to all counter-number elements
 async function updateCounter() {
+    const els = document.querySelectorAll(".counter-number");
     try {
         let response = await fetch(
             "https://l55bixbqlzqd6xzxq5iy56nwoe0geyzn.lambda-url.us-east-1.on.aws/"
         );
         let data = await response.json();
-        counter.textContent = `👀 Views: ${data}`;
+        els.forEach(el => { el.textContent = `👀 Views: ${data}`; });
     } catch (e) {
-        counter.textContent = "";
+        els.forEach(el => { el.textContent = ""; });
     }
 }
 

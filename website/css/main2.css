@@ -959,3 +959,72 @@
 @media (max-width: 767px) {
   .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
 }
+
+/* ══════════════════════════════════════════
+   FIXES
+   ══════════════════════════════════════════ */
+
+/* 1 — Hero: ring pinned to top, larger photo */
+.cc-profile-image a:before {
+  top: 0 !important;
+}
+
+.cc-profile-image img,
+.cc-profile-image a:before {
+  height: 220px !important;
+  width: 220px !important;
+}
+
+/* Vertically centre hero photo with text column */
+.hero-photo-col {
+  display: flex;
+  align-items: center;
+}
+
+/* 2 — Portfolio: undo the template rule that hides our overlay link */
+.gallery .cc-porfolio-image figure figcaption > a.cc-overlay-link {
+  position: relative !important;
+  width: auto !important;
+  height: auto !important;
+  text-indent: 0 !important;
+  font-size: 0.7rem !important;
+  white-space: normal !important;
+  z-index: 1001;
+}
+
+/* 3a — Contact form: subheading */
+.contact-form-subheading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.contact-form-tagline {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+[data-theme="dark"] .contact-form-subheading { color: #f1f5f9; }
+
+/* 3b — Contact info panel: distinct from footer */
+.contact-info-panel {
+  background: #1e293b !important;
+  border-top: 3px solid #4ade80;
+}
+
+/* 3c — Footer bottom bar: white text, centered */
+.footer-bottom {
+  color: #94a3b8 !important;
+  justify-content: center !important;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom span,
+.footer-back-top {
+  color: #94a3b8 !important;
+}
+
+.footer-back-top:hover { color: #4ade80 !important; }
