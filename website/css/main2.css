@@ -45,7 +45,7 @@
     padding: 50px;
     list-style: none;
     text-align: left;
-    max-width: 40%;
+    max-width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -1255,3 +1255,47 @@
 }
 
 [data-theme="dark"] .portfolio-intro { color: #94a3b8; }
+
+/* ── #6 Security-themed hero background ── */
+.hero-bg-security {
+  background-color: #050d14;
+  background-image:
+    linear-gradient(rgba(74, 222, 128, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(74, 222, 128, 0.06) 1px, transparent 1px),
+    radial-gradient(ellipse at 20% 50%, rgba(22, 163, 74, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(15, 23, 42, 0.9) 0%, transparent 50%);
+  background-size: 40px 40px, 40px 40px, 100% 100%, 100% 100%;
+}
+
+/* Override the gradient overlay to work with the dark background */
+.profile-page .page-header:before {
+  background: linear-gradient(135deg, rgba(5, 13, 20, 0.55) 0%, rgba(15, 23, 42, 0.4) 100%);
+}
+
+/* ── #19 CYBER1 promotion marker ── */
+.exp-promotion-marker {
+  list-style: none;
+  padding: 0 0 0 24px;
+  margin: -8px 0 4px;
+  border-bottom: none;
+}
+
+.exp-promo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  color: #166534;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid #86efac;
+  letter-spacing: 0.3px;
+}
+
+[data-theme="dark"] .exp-promo-badge {
+  background: linear-gradient(135deg, #14532d, #166534);
+  color: #86efac;
+  border-color: #166534;
+}
