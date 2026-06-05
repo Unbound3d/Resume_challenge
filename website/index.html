@@ -171,11 +171,16 @@
           <img src="images/banner.png" alt="profile image" class="about-banner" loading="lazy">
         </div>
         <div class="col-lg-6 col-md-12">
-          <div class="card-body">
+          <div class="card-body about-text-body">
             <div class="h4 mt-0 title">About Me</div>
-            <p>With a sharp focus on offensive security, penetration testing, application security and cloud security, I bring over 3 years of expertise as a Cyber Security Specialist and Python Software Developer. My passion lies in uncovering vulnerabilities, fortifying cloud infrastructures, and executing strategic penetration tests to ensure robust defense mechanisms. I thrive on the thrill of securing networks against potential threats and leveraging cloud technologies to enhance resilience. 
-            As a self-driven learner, I continuously explore new methodologies and tools to elevate my craft, aiming to drive impactful change within organizations. My skill set spans across Linux System Administration, Windows Server management, Networking optimization, Mobile Security strategies, Reverse Engineering techniques, Penetration Testing methodologies, Vulnerability Assessment practices, and Log management proficiency. </p>
-            <a class="btn btn-primary" href="https://www.linkedin.com/in/erick-mutisya/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"><i class="fa fa-linkedin mr-1"></i> Connect on LinkedIn</a>
+            <p>With a sharp focus on offensive security, penetration testing, application security and cloud security, I bring over 3 years of expertise as a Cyber Security Specialist and Python Software Developer. My passion lies in uncovering vulnerabilities, fortifying cloud infrastructures, and executing strategic penetration tests to ensure robust defense mechanisms. I thrive on the thrill of securing networks against potential threats and leveraging cloud technologies to enhance resilience.</p>
+            <div class="about-stats">
+              <div class="about-stat-chip"><span class="about-stat-number">3+</span><span class="about-stat-label">Years Experience</span></div>
+              <div class="about-stat-chip"><span class="about-stat-number">10+</span><span class="about-stat-label">Certifications</span></div>
+              <div class="about-stat-chip"><span class="about-stat-number">5+</span><span class="about-stat-label">Clients Served</span></div>
+              <div class="about-stat-chip about-stat-avail"><span class="about-stat-label">&#x2713; Available</span></div>
+            </div>
+            <a class="btn btn-primary mt-3" href="https://www.linkedin.com/in/erick-mutisya/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin mr-1"></i> Connect on LinkedIn</a>
           </div>
         </div>
       </div>
@@ -185,7 +190,13 @@
 <div class="section" id="skill">
   <div class="container">
     <div class="h4 text-center mb-4 title">TOP SKILLS</div>
-    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <div class="card skills-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="skills-terminal-header">
+        <span class="terminal-dot dot-red"></span>
+        <span class="terminal-dot dot-yellow"></span>
+        <span class="terminal-dot dot-green"></span>
+        <span class="terminal-prompt">~ ls skills/</span>
+      </div>
       <div class="card-body">
         <!-- My code snippet  -->
         <div class="skills-group-container">
@@ -226,22 +237,56 @@
 <div class="section" id="certifications">
   <div class="container">
     <div class="h4 text-center mb-4 title">CERTIFICATIONS & AWARDS</div>
-    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-      <div class="card-body">
-          <div class="w-100">
-            <ul class="fa-ul mb-0 font-ram font-size-16 text-black-50 pb-3">
-              <li><i class="fa-li fa fa-trophy text-warning"></i>Certified DevSecOps Professional (CDP) – Practical DevSecOps</li>
-              <li><i class="fa-li fa fa-trophy text-warning"></i>API Penetration Testing - APIsec University</li>
-              <li><i class="fa-li fa fa-trophy text-warning"></i>Salt Technical Associate</li>
-              <li><i class="fa-li fa fa-trophy text-warning"></i>Ivanti Endpoint Manager - Administration</li>
-              <li><i class="fa-li fa fa-trophy text-warning"></i>Cato Certified Associate</li>
-              <li><i class="fa-li fa fa-trophy text-warning"></i>Cloud and Network Security Analyst - CyberShujaa</li>
-              <li><i class="fa-li fa fa-trophy text-warning"></i>JAMF Certified Associate</li>
-              <li><i class="fa-li fa fa-trophy text-warning"></i>Trellix Certified Architect-Endpoint Security (ENS)</li>
-              <li><i class="fa-li fa fa-trophy text-warning"></i>Certified Cybersecurity - ISC2</li>
-              <li><i class="fa-li fa fa-trophy text-warning"></i>Mobile Application Security Foundation - Nowsecure</li>
-            </ul>
-          </div>
+    <div class="cert-grid" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="cert-card cert-offensive">
+        <div class="cert-category-label">Offensive &amp; DevSecOps</div>
+        <div class="cert-name">Certified DevSecOps Professional (CDP)</div>
+        <div class="cert-issuer">Practical DevSecOps</div>
+      </div>
+      <div class="cert-card cert-offensive">
+        <div class="cert-category-label">Offensive &amp; DevSecOps</div>
+        <div class="cert-name">API Penetration Testing</div>
+        <div class="cert-issuer">APIsec University</div>
+      </div>
+      <div class="cert-card cert-offensive">
+        <div class="cert-category-label">Offensive &amp; DevSecOps</div>
+        <div class="cert-name">Mobile Application Security Foundation</div>
+        <div class="cert-issuer">NowSecure</div>
+      </div>
+      <div class="cert-card cert-cloud">
+        <div class="cert-category-label">Cloud &amp; Network</div>
+        <div class="cert-name">Cloud and Network Security Analyst</div>
+        <div class="cert-issuer">CyberShujaa</div>
+      </div>
+      <div class="cert-card cert-cloud">
+        <div class="cert-category-label">Cloud &amp; Network</div>
+        <div class="cert-name">Cato Certified Associate</div>
+        <div class="cert-issuer">Cato Networks</div>
+      </div>
+      <div class="cert-card cert-general">
+        <div class="cert-category-label">Industry Standard</div>
+        <div class="cert-name">Certified in Cybersecurity (CC)</div>
+        <div class="cert-issuer">ISC2</div>
+      </div>
+      <div class="cert-card cert-vendor">
+        <div class="cert-category-label">Vendor</div>
+        <div class="cert-name">Trellix Certified Architect – ENS</div>
+        <div class="cert-issuer">Trellix</div>
+      </div>
+      <div class="cert-card cert-vendor">
+        <div class="cert-category-label">Vendor</div>
+        <div class="cert-name">Ivanti Endpoint Manager Administration</div>
+        <div class="cert-issuer">Ivanti</div>
+      </div>
+      <div class="cert-card cert-vendor">
+        <div class="cert-category-label">Vendor</div>
+        <div class="cert-name">Salt Technical Associate</div>
+        <div class="cert-issuer">Salt Security</div>
+      </div>
+      <div class="cert-card cert-vendor">
+        <div class="cert-category-label">Vendor</div>
+        <div class="cert-name">JAMF Certified Associate</div>
+        <div class="cert-issuer">JAMF</div>
       </div>
     </div>
   </div>
@@ -380,25 +425,49 @@
                     <div id="content">
                         <ul class="timeline">
                             <li class="event" data-date="Nov 2024 – Present">
-                                <h3>Cyber Security Analyst - Red Team </h3>
-                                <p>Britam Holdings.</p>
+                                <h3>Cyber Security Analyst — Red Team</h3>
+                                <p class="exp-company">Britam Holdings <span class="exp-domain exp-domain-finance">Financial Services</span></p>
+                                <ul class="exp-bullets">
+                                  <li>Lead red team engagements simulating APT tactics to test enterprise defences across corporate and insurance systems.</li>
+                                  <li>Conduct internal and external penetration tests on web applications, APIs, and cloud infrastructure.</li>
+                                  <li>Produce executive and technical risk reports with remediation roadmaps for stakeholder review.</li>
+                                </ul>
                             </li>
                             <li class="event" data-date="March 2024 – Oct 2024">
-                                <h3>Cyber Security Engineer - Assurance Services </h3>
-                                <p>CYBER1 Solutions - East and West Africa.</p>
+                                <h3>Cyber Security Engineer — Assurance Services</h3>
+                                <p class="exp-company">CYBER1 Solutions – East &amp; West Africa <span class="exp-domain exp-domain-consulting">Consulting</span></p>
+                                <ul class="exp-bullets">
+                                  <li>Delivered VAPT engagements for clients across banking, telecoms, and government sectors.</li>
+                                  <li>Performed security audits aligned to ISO 27001 and CIS benchmarks, producing gap analyses and remediation plans.</li>
+                                  <li>Supported pre-sales technical scoping and authored detailed security assessment proposals.</li>
+                                </ul>
                             </li>
                             <li class="event" data-date="July 2023 – Feb 2024">
-                                <h3>Cyber Security Engineer - Technical Division  </h3>
-                                <p>CYBER1 Solutions - East and West Africa.</p>
+                                <h3>Cyber Security Engineer — Technical Division</h3>
+                                <p class="exp-company">CYBER1 Solutions – East &amp; West Africa <span class="exp-domain exp-domain-consulting">Consulting</span></p>
+                                <ul class="exp-bullets">
+                                  <li>Deployed and configured security solutions including EDR, SIEM, and network access control for enterprise clients.</li>
+                                  <li>Performed threat-hunting exercises and tuned detection rules to reduce false-positive alert rates.</li>
+                                  <li>Provided Tier-2/3 incident response support, leading root-cause analysis and post-incident reviews.</li>
+                                </ul>
                             </li>
                             <li class="event" data-date="Nov 2021 – July 2022">
-                                <h3>Cybersecurity specialist (On-the-job training)</h3>
-                                <p>eKRAAL Innovation Hub</p>
+                                <h3>Cybersecurity Specialist (OJT)</h3>
+                                <p class="exp-company">eKRAAL Innovation Hub <span class="exp-domain exp-domain-startup">Startup / Research</span></p>
+                                <ul class="exp-bullets">
+                                  <li>Conducted vulnerability assessments on internal systems and drafted remediation reports for the engineering team.</li>
+                                  <li>Researched emerging mobile and web application attack vectors as part of the hub's security R&amp;D programme.</li>
+                                </ul>
                             </li>
                             <li class="event" data-date="Jan 2019 – Oct 2021">
-                              <h3>IT Officer/Sys Admin</h3>
-                              <p>Kitui County Referral Hospital</p>
-                          </li>
+                                <h3>IT Officer / Systems Administrator</h3>
+                                <p class="exp-company">Kitui County Referral Hospital <span class="exp-domain exp-domain-gov">Government / Healthcare</span></p>
+                                <ul class="exp-bullets">
+                                  <li>Administered Windows Server and Linux environments, managing user accounts, backups, and patch cycles.</li>
+                                  <li>Designed and maintained the hospital's LAN/WAN network, reducing downtime by proactive monitoring.</li>
+                                  <li>Implemented endpoint security policies and trained staff on cybersecurity awareness best practices.</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -459,85 +528,102 @@
 </div> -->
 <div class="section" id="contact">
   <div class="container">
-    <div class="divider" style="height: 2px; background-color: #ccc; margin: 20px 0;"></div>
-  </div>
-  <div class="cc-contact-information">
-    <div class="container">
-      <div class="cc-contact">
-        <div class="row">
-          <div class="col-md-9">
-            <div class="card mb-0" data-aos="zoom-in">
-              <div class="h4 text-center title">Contact Me</div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <form action="https://formspree.io/f/xbjnzwbg" method="POST">
-                      <div class="p pb-3"><strong>Feel free to contact me </strong></div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
-                            <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                            <input class="form-control" type="text" name="Subject" placeholder="Subject" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                            <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <button class="btn btn-primary" type="submit">Send</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <p class="mb-0"><strong>Address </strong></p>
-                    <p class="pb-2">Nairobi Kenya</p>
-                    <p class="mb-0"><strong>Email</strong></p>
-                    <p>mutisyaerick12@gmail.com</p>
-                  </div>
+    <div class="h4 text-center mb-4 title">Get In Touch</div>
+    <div class="row contact-row" data-aos="fade-up">
+      <div class="col-md-6">
+        <div class="contact-panel contact-form-panel">
+          <div class="contact-panel-label">Send a Message</div>
+          <form action="https://formspree.io/f/xbjnzwbg" method="POST">
+            <div class="row mb-3">
+              <div class="col">
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
+                  <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
                 </div>
               </div>
             </div>
+            <div class="row mb-3">
+              <div class="col">
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
+                  <input class="form-control" type="text" name="Subject" placeholder="Subject" required="required"/>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                  <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <textarea class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="contact-panel contact-info-panel">
+          <div class="contact-panel-label">Contact Info</div>
+          <div class="contact-info-item">
+            <i class="fa fa-map-marker contact-info-icon"></i>
+            <div><strong>Location</strong><br>Nairobi, Kenya</div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa fa-envelope contact-info-icon"></i>
+            <div><strong>Email</strong><br><a href="mailto:mutisyaerick12@gmail.com">mutisyaerick12@gmail.com</a></div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa fa-linkedin contact-info-icon"></i>
+            <div><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/erick-mutisya/" target="_blank" rel="noopener noreferrer">erick-mutisya</a></div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa fa-github contact-info-icon"></i>
+            <div><strong>GitHub</strong><br><a href="https://github.com/Unbound3d" target="_blank" rel="noopener noreferrer">Unbound3d</a></div>
+          </div>
+          <div class="contact-avail-badge">
+            <span class="avail-dot"></span> Available for engagements
           </div>
         </div>
       </div>
     </div>
   </div>
 </div></div>
-    <footer class="footer" style="background: #F2FEF5;">
-      <div class="container text-center">
-        <a class="cc-facebook btn btn-link" href="https://www.linkedin.com/in/erick-mutisya/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-        <a class="cc-twitter btn btn-link" href="https://twitter.com/unbound3d"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-        <a class="cc-google-plus btn btn-link" href="https://github.com/Unbound3d"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-        <a class="cc-instagram btn btn-link" href="https://medium.com/@unbound3d"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></a>
-      </div>
-      <div class="h4 title text-center">Erick Mutisya</div>
-      <div class="counter-number text-center text-black-50 font-os font-size-16 active">
-        Couldn't fetch views 
-      </div>
-      <div class="text-center text-muted">
-        <p>&copy; <span id="year"></span> All rights reserved</p>
+    <footer class="footer footer-dark">
+      <div class="container">
+        <div class="row footer-row align-items-start">
+          <div class="col-md-4 footer-col footer-brand-col">
+            <div class="footer-name">Erick Mutisya</div>
+            <div class="footer-tagline">Cyber Security Specialist &amp; Penetration Tester</div>
+            <div class="counter-number footer-views active"></div>
+          </div>
+          <div class="col-md-4 footer-col footer-nav-col">
+            <div class="footer-col-heading">Quick Links</div>
+            <ul class="footer-nav-list">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skill">Skills</a></li>
+              <li><a href="#certifications">Certifications</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-col footer-social-col">
+            <div class="footer-col-heading">Connect</div>
+            <div class="footer-social-links">
+              <a href="https://www.linkedin.com/in/erick-mutisya/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa fa-linkedin"></i> LinkedIn</a>
+              <a href="https://github.com/Unbound3d" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa fa-github"></i> GitHub</a>
+              <a href="https://twitter.com/unbound3d" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fa fa-twitter"></i> Twitter</a>
+              <a href="https://unbound3d.hashnode.dev/" target="_blank" rel="noopener noreferrer" title="Blog"><i class="fa fa-pencil"></i> Blog</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; <span id="year"></span> Erick Mutisya. All rights reserved.</span>
+          <a href="#top" class="footer-back-top smooth-scroll">&#8593; Back to top</a>
+        </div>
       </div>
     </footer>
     
