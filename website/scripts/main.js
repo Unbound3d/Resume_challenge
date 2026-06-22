@@ -104,7 +104,7 @@ updateCounter();
 
   const saved = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  applyTheme(saved ? saved === 'dark' : prefersDark);
+  applyTheme(saved ? saved === 'dark' : false);
 
   toggle.addEventListener('click', function () {
     applyTheme(document.documentElement.getAttribute('data-theme') !== 'dark');
