@@ -158,6 +158,11 @@
   background: linear-gradient(135deg, rgba(0,0,0,0.65) 0%, rgba(0,40,10,0.55) 100%);
 }
 
+/* Restore green gradient on hero in dark mode */
+[data-theme="dark"] .profile-page .page-header {
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.6)) !important;
+}
+
 /* Split layout: photo left, text right */
 .hero-split {
   display: flex !important;
